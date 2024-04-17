@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Masukan Password sebelumnya:"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@android:color/white"
+        android:backgroundTint="@android:color/white"
+        android:textColorHint="@android:color/white">
+        <EditText
+            android:id="@+id/textInputConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:shadowColor="@android:color/white"
+            android:textSize="15dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@android:color/holo_blue_dark"
+            android:clickable="true"
+            android:text="OK"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/holo_red_dark"
+            android:clickable="true"
+            android:text="Cancel"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

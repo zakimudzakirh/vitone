@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#413e4f"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context=".activities.InfoMenuActivity">
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/insan_kamil_logo"/>
+        <Button
+            android:id="@+id/btnInfoProfil"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:text="Info Profil"/>
+        <Button
+            android:id="@+id/btnInfoAnak"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:text="Info Anak Panti"/>
+        <Button
+            android:id="@+id/btnInfoProgram"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:text="Info Program"/>
+        <Button
+            android:id="@+id/btnInfoRek"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:text="Info Rekening"/>
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:text="Kembali"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v4.widget.NestedScrollView>

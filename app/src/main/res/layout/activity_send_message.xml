@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#413e4f"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools.context=".activities.SendMessageActivity">
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/insan_kamil_logo"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Nomor Tujuan:"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/textNomor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/btnSelect"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:backgroundTint="@android:color/white"
+                    android:inputType="number"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btnSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="5dp"
+                    app:backgroundTint="@color/colorPrimary"
+                    android:src="@drawable/icon_ic_user"/>
+            </RelativeLayout>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Nama:"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/textNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:backgroundTint="@android:color/white"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Pesan:"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1" >
+
+                <RadioButton
+                    android:id="@+id/radioManual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textColor="@android:color/white"
+                    android:text="Manual" />
+
+                <RadioButton
+                    android:id="@+id/radioThanks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Terima Kasih" />
+
+                <RadioButton
+                    android:id="@+id/radioInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Info" />
+
+            </RadioGroup>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:counterEnabled="true"
+                app:counterMaxLength="140"
+                app:counterTextAppearance="@style/counterText"
+                app:counterOverflowTextAppearance="@style/counterTextOverflow">
+                <EditText
+                    android:id="@+id/textPesan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:backgroundTint="@android:color/white"
+                    android:maxLines="4"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Send"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Kembali"
+                android:textColor="@android:color/white"/>
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v4.widget.NestedScrollView>

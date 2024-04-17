@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dip"
+    android:background="@drawable/search_box_dropdown_bg"
+    android:textAlignment="gravity" >
+
+    <TextView
+        android:id="@+id/search_item_venue_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="17dp"
+        android:text="Nama"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/search_item_venue_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/search_item_venue_name"
+        android:textColor="@android:color/darker_gray" />
+
+
+</RelativeLayout>
